@@ -13,7 +13,7 @@ Realização de um desafio semanal da Rocketseat chamado <a href="https://www.ro
 
 ### 🖥️ Layout pronto
 
-https://conversor-de-moedas-two.vercel.app/
+https://10-uma-pagina-de-clima.vercel.app/
 
 ### 🌟 Features
 
