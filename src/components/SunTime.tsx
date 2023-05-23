@@ -1,7 +1,7 @@
 import { Sun } from "lucide-react";
 import Image from "next/image";
-import sunChart from "../images/sun-chart.png";
-import sunGradient from "../images/sun-gradient.png";
+import sunChart from "../assets/sun-chart.png";
+import sunGradient from "../assets/sun-gradient.png";
 import { Weather } from "@/app/page";
 import Loading from "./Loading";
 import { differenceInSeconds, parse, startOfDay } from "date-fns";
@@ -77,22 +77,20 @@ export default function SunTime({ weather }: Props) {
             <p className="absolute top-[50%] font-[700] leading-[1.05rem]">
               {formattedTime}
             </p>
-            <div>
-              <Image
-                src={sunChart}
-                alt=""
-                className="relative z-[101] h-auto w-full max-w-[231px]"
-              />
-              <Image
-                src={sunGradient}
-                alt=""
-                className="absolute left-[9px] top-[8px] z-[100] h-full"
-                style={{ width: widthGradient }}
-              />
-            </div>
+            <Image
+              src={sunChart}
+              alt=""
+              className="relative z-[101] h-auto w-full max-w-[231px]"
+            />
+            <Image
+              src={sunGradient}
+              alt=""
+              className="absolute left-[17px] top-[8px] z-[100] h-full"
+              style={{ width: widthGradient }}
+            />
 
             <div
-              className="absolute left-[3px] top-[116px] h-auto w-full max-w-[231px]"
+              className="absolute top-[119px] w-full max-w-[223px]"
               style={{ transform: rotateSun }}
             >
               <div
