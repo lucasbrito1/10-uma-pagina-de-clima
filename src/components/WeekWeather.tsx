@@ -14,9 +14,9 @@ export default function WeekWeather({ forecastday }: Props) {
   }
 
   return (
-    <div className="h-[13.25rem] w-[37.25rem] rounded-[0.625rem] bg-purple">
+    <div className="h-[400px] w-full rounded-[0.625rem] bg-purple md:h-[13.25rem] md:w-[37.25rem]">
       {forecastday ? (
-        <div className="flex h-full items-center justify-between p-[2.5rem]">
+        <div className="flex h-full flex-wrap items-center gap-[20px] p-[2.5rem] md:justify-between">
           {forecastday
             ? forecastday.map((forecast, key) => (
                 <div

@@ -39,7 +39,7 @@ export default function AirQuality({ weather }: Props) {
   }, [weather]);
 
   return (
-    <div className="flex h-[15.25rem] w-[18.4375rem] flex-col items-center justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem]">
+    <div className="flex h-[15.25rem] w-full flex-col items-center justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] md:w-[18.4375rem]">
       {weather ? (
         <>
           <div className="flex items-center gap-[0.5rem] text-white-ice">
@@ -53,7 +53,7 @@ export default function AirQuality({ weather }: Props) {
             </p>
           </div>
 
-          <div className="flex items-end gap-[16px] text-center">
+          <div className="flex items-end gap-[1.5625rem] text-center md:gap-[1rem]">
             <div>
               <p className="text-[14px] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.pm2_5 ?? 0).toFixed(1)}

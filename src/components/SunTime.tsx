@@ -64,7 +64,7 @@ export default function SunTime({ weather }: Props) {
   }, [weather?.forecast.forecastday, widthGradient, time]);
 
   return (
-    <div className="flex h-[15.25rem] w-[17.3125rem] flex-col justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem]">
+    <div className="flex h-[15.25rem] w-full flex-col justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] md:w-[17.3125rem]">
       {weather ? (
         <>
           <div className="flex flex-col items-center">
@@ -85,7 +85,7 @@ export default function SunTime({ weather }: Props) {
             <Image
               src={sunGradient}
               alt=""
-              className="absolute left-[17px] top-[8px] z-[100] h-full"
+              className="absolute top-[8px] z-[100] h-full md:left-[17px]"
               style={{ width: widthGradient }}
             />
 
@@ -102,7 +102,7 @@ export default function SunTime({ weather }: Props) {
               />
             </div>
           </div>
-          <div className="flex justify-between text-[0.75rem] leading-[0.9rem]">
+          <div className="flex justify-between px-[1.875rem] text-[0.75rem] leading-[0.9rem] md:p-0">
             <p>{weather.forecast.forecastday[0].astro.sunrise}</p>
             <p>{weather.forecast.forecastday[0].astro.sunset}</p>
           </div>{" "}
