@@ -10,7 +10,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: #8e87fa url(../images/background.png) no-repeat;
+  background: #8e87fa url(../assets/background.png) no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
