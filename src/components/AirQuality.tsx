@@ -1,5 +1,5 @@
 import { Weather } from "@/app/page";
-import { Leaf, RefreshCw } from "lucide-react";
+import { Leaf } from "lucide-react";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
 
@@ -63,8 +63,7 @@ export default function AirQuality({ weather }: Props) {
             <div>
               <p className="text-[14px] font-[700] text-[#87EBCD]">
                 {" "}
-                {Math.floor((weather?.current.air_quality.pm10 ?? 0) * 100) /
-                  100}
+                {(weather?.current.air_quality.pm10 ?? 0).toFixed(1)}
               </p>
               <p className="text-[0.75rem]">PM10</p>
             </div>
