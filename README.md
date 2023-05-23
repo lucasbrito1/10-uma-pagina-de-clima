@@ -1,23 +1,28 @@
 <h1 align='center'>Uma página de clima</h1>
 
-## 📝 Sobre o projeto
+<div align="center">
+  <img width="500px" src="/.github/preview.jpg" /> <br>
+</div>
 
-Realização de um desafio semanal da Rocketseat para desenvolver uma página de clima.
+##
 
-#boraCodar - Desafio 10
+### 📝 Sobre o projeto
 
-## 🌟 Features
+Realização de um desafio semanal da Rocketseat chamado <a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> para desenvolver uma página de clima. <br>
+
+
+### 🖥️ Layout pronto
+
+https://conversor-de-moedas-two.vercel.app/
+
+### 🌟 Features
 
 - Uso de API para obter localização
 - Uso de API para obter informações do clima
 
-## 🚀 Tecnologias utilizadas
+### 🚀 Tecnologias utilizadas
 
 - React JS
 - TypeScript
 - Tailwind CSS
 - Next JS
-
-## 🖥️ Layout
-
-https://conversor-de-moedas-two.vercel.app/
