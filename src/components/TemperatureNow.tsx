@@ -1,5 +1,5 @@
 import { MapPin, Wind, Droplets, Cloudy } from "lucide-react";
-import clouds from "../images/clouds-top.png";
+import clouds from "../assets/clouds-top.png";
 import Image from "next/image";
 import { LocationResponse, Weather } from "@/app/page";
 import Loading from "./Loading";
@@ -11,7 +11,7 @@ interface Props {
 
 export default function TemperatureNow({ weather, location }: Props) {
   return (
-    <div className="relative flex h-[30rem] w-[30rem] flex-col justify-center rounded-[10px] bg-[url('../images/clouds-temperaturessssss.png')] bg-cover bg-center bg-no-repeat">
+    <div className="relative flex h-[30rem] w-[30rem] flex-col justify-center rounded-[10px] bg-[url('../assets/clouds-temperature.png')] bg-cover bg-center bg-no-repeat">
       <Image
         src={clouds}
         alt=""
