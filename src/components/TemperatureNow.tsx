@@ -11,16 +11,16 @@ interface Props {
 
 export default function TemperatureNow({ weather, location }: Props) {
   return (
-    <div className="relative flex h-[30rem] flex-col justify-center rounded-[10px] bg-[url('../assets/clouds-temperature.png')] bg-cover bg-center bg-no-repeat md:w-[30rem]">
+    <div className="relative flex h-[30rem] flex-col justify-center rounded-[0.625rem] bg-[url('../assets/clouds-temperature.png')] bg-cover bg-center bg-no-repeat lg:w-[30rem]">
       <Image
         src={clouds}
         alt=""
-        className="absolute left-[-20px] top-[-40px] h-[100px] w-[100px] md:left-[-3.5rem] md:top-[-3.5rem] md:h-[176px] md:w-[176px]"
+        className="absolute left-[-1.25rem] top-[-2.5rem] h-[6.25rem] w-[6.25rem] lg:left-[-3.5rem] lg:top-[-3.5rem] lg:h-[11rem] lg:w-[11rem]"
       />
 
       {weather ? (
         <>
-          <div className="flex h-[200px] items-start justify-end pr-[2rem] pt-[2rem] font-[700]">
+          <div className="flex h-[12.5rem] items-start justify-end pr-[2rem] pt-[2rem] font-[700]">
             <div className="flex items-center gap-[0.5rem] text-gray">
               <MapPin size={17} />
               <p className="text-[0.875rem] font-[700]">
@@ -34,7 +34,7 @@ export default function TemperatureNow({ weather, location }: Props) {
             <p className="text-[5.5rem] font-[700] leading-[6.6rem]">
               {Math.floor(weather?.current.temp_c)}
             </p>
-            <p className="absolute top-[42px] ml-[8.4375rem] text-[1.5rem] font-[700] leading-[1.8rem] text-gray">
+            <p className="absolute top-[2.625rem] ml-[8.4375rem] text-[1.5rem] font-[700] leading-[1.8rem] text-gray">
               °C
             </p>
             <div className="flex justify-center gap-[0.625rem] text-[1.25rem] font-[700]">
@@ -53,8 +53,8 @@ export default function TemperatureNow({ weather, location }: Props) {
             </div>
           </div>
 
-          <div className="flex h-full flex-col items-end justify-center gap-[0.5rem] p-[0.75rem] md:flex md:flex-row">
-            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[6px] bg-[#6660C899] px-[16px] py-[16px] md:w-[9.1669rem]">
+          <div className="flex h-full flex-col items-end justify-center gap-[0.5rem] p-[0.75rem] lg:flex lg:flex-row">
+            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[0.375rem] bg-[#6660C899] px-[1rem] py-[1rem] lg:w-[9.1669rem]">
               <div className="flex items-center gap-[0.75rem]">
                 <Wind size={32} className="text-gray" />
                 <div>
@@ -68,7 +68,7 @@ export default function TemperatureNow({ weather, location }: Props) {
                 </div>
               </div>
             </div>
-            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[6px] bg-[#6660C899] md:w-[9.1669rem]">
+            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[0.375rem] bg-[#6660C899] lg:w-[9.1669rem]">
               <div className="flex items-center gap-[0.75rem]">
                 <Droplets size={32} className="text-gray" />
                 <div>
@@ -82,7 +82,7 @@ export default function TemperatureNow({ weather, location }: Props) {
                 </div>
               </div>
             </div>
-            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[6px] bg-[#6660C899] md:w-[9.1669rem]">
+            <div className="flex h-[3.75rem] w-full items-center justify-center rounded-[0.375rem] bg-[#6660C899] lg:w-[9.1669rem]">
               <div className="flex items-center gap-[0.75rem]">
                 <Cloudy size={32} className="text-gray" />
                 <div>

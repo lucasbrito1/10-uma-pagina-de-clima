@@ -110,10 +110,10 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-screen md:flex md:items-center md:justify-center">
-        <div className="flex flex-col gap-[1.5rem] p-[20px] md:flex md:flex-row md:gap-[1.5rem]">
+      <div className="h-screen lg:flex lg:items-center lg:justify-center">
+        <div className="flex flex-col gap-[1.5rem] p-[1.25rem] lg:flex lg:flex-row lg:gap-[1.5rem]">
           <TemperatureNow weather={weather} location={location} />
-          <div className="flex flex-col gap-[1.5rem] md:flex md:w-[37.25rem] md:flex-row md:flex-wrap md:gap-[1.5rem]">
+          <div className="flex flex-col gap-[1.5rem] lg:flex lg:w-[37.25rem] lg:flex-row lg:flex-wrap lg:gap-[1.5rem]">
             <AirQuality weather={weather} />
             <SunTime weather={weather} />
             <WeekWeather forecastday={weather?.forecast.forecastday} />

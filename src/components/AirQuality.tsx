@@ -39,7 +39,7 @@ export default function AirQuality({ weather }: Props) {
   }, [weather]);
 
   return (
-    <div className="flex h-[15.25rem] w-full flex-col items-center justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] md:w-[18.4375rem]">
+    <div className="flex h-[15.25rem] w-full flex-col items-center justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] lg:w-[18.4375rem]">
       {weather ? (
         <>
           <div className="flex items-center gap-[0.5rem] text-white-ice">
@@ -53,22 +53,22 @@ export default function AirQuality({ weather }: Props) {
             </p>
           </div>
 
-          <div className="flex items-end gap-[1.5625rem] text-center md:gap-[1rem]">
+          <div className="flex items-end gap-[1.5625rem] text-center lg:gap-[1rem]">
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.pm2_5 ?? 0).toFixed(1)}
               </p>
-              <p className="text-[12px]">PM2.5</p>
+              <p className="text-[0.75rem]">PM2.5</p>
             </div>
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {" "}
                 {(weather?.current.air_quality.pm10 ?? 0).toFixed(1)}
               </p>
               <p className="text-[0.75rem]">PM10</p>
             </div>
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.so2 ?? 0).toFixed(1)}
               </p>
               <p className="text-[0.75rem]">
@@ -76,7 +76,7 @@ export default function AirQuality({ weather }: Props) {
               </p>
             </div>
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.no2 ?? 0).toFixed(1)}
               </p>
               <p className="text-[0.75rem]">
@@ -84,7 +84,7 @@ export default function AirQuality({ weather }: Props) {
               </p>
             </div>
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.o3 ?? 0).toFixed(1)}
               </p>
               <p className="text-center text-[0.75rem]">
@@ -92,7 +92,7 @@ export default function AirQuality({ weather }: Props) {
               </p>
             </div>
             <div>
-              <p className="text-[14px] font-[700] text-[#87EBCD]">
+              <p className="text-[0.875rem] font-[700] text-[#87EBCD]">
                 {(weather?.current.air_quality.co ?? 0).toFixed(1)}
               </p>
               <p className="text-[0.75rem]">CO</p>

@@ -11,6 +11,9 @@ module.exports = {
       gray: "#DAD8F7",
       "white-ice": "#DAD8F7",
     },
+    screens: {
+      lg: "1120px",
+    },
     extend: {},
   },
   plugins: [],

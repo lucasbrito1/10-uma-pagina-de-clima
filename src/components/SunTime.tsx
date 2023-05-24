@@ -64,7 +64,7 @@ export default function SunTime({ weather }: Props) {
   }, [weather?.forecast.forecastday, widthGradient, time]);
 
   return (
-    <div className="flex h-[15.25rem] w-full flex-col justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] md:w-[17.3125rem]">
+    <div className="flex h-[15.25rem] w-full flex-col justify-between rounded-[0.625rem] bg-purple px-[1rem] pb-[1rem] pt-[2rem] lg:w-[17.3125rem]">
       {weather ? (
         <>
           <div className="flex flex-col items-center">
@@ -80,17 +80,17 @@ export default function SunTime({ weather }: Props) {
             <Image
               src={sunChart}
               alt=""
-              className="relative z-[101] h-auto w-full max-w-[231px]"
+              className="relative z-[101] h-auto w-full max-w-[14.4375rem]"
             />
             <Image
               src={sunGradient}
               alt=""
-              className="absolute top-[8px] z-[100] h-full md:left-[17px]"
+              className="absolute top-[0.5rem] z-[100] h-full lg:left-[1.0625rem]"
               style={{ width: widthGradient }}
             />
 
             <div
-              className="absolute top-[119px] w-full max-w-[223px]"
+              className="absolute top-[7.4375rem] w-full max-w-[13.9375rem]"
               style={{ transform: rotateSun }}
             >
               <div
@@ -102,7 +102,7 @@ export default function SunTime({ weather }: Props) {
               />
             </div>
           </div>
-          <div className="flex justify-between px-[1.875rem] text-[0.75rem] leading-[0.9rem] md:p-0">
+          <div className="flex justify-center gap-[8.75rem] text-[0.75rem] leading-[0.9rem] lg:p-0">
             <p>{weather.forecast.forecastday[0].astro.sunrise}</p>
             <p>{weather.forecast.forecastday[0].astro.sunset}</p>
           </div>{" "}
