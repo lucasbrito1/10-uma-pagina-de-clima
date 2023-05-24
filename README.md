@@ -17,8 +17,8 @@ https://10-uma-pagina-de-clima.vercel.app/
 
 ### 🌟 Features
 
-- Uso de API para obter localização
-- Uso de API para obter informações do clima
+- Layout responsivo
+- Uso de API para obter localização e informações do clima
 
 ### 🚀 Tecnologias utilizadas
 
