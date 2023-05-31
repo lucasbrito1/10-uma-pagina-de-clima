@@ -1,11 +1,11 @@
 import { Sun } from "lucide-react";
 import Image from "next/image";
-import sunChart from "../assets/sun-chart.png";
-import sunGradient from "../assets/sun-gradient.png";
-import { Weather } from "@/app/page";
-import Loading from "./Loading";
+import sunChart from "assets/sun-chart.png";
+import sunGradient from "assets/sun-gradient.png";
+import { Weather } from "app/page";
 import { differenceInSeconds, parse, startOfDay } from "date-fns";
 import { useState, useEffect } from "react";
+import Loading from "components/Loading";
 
 interface Props {
   weather: Weather | null;

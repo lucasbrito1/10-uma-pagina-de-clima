@@ -1,7 +1,7 @@
 import { MapPin, Wind, Droplets, Cloudy } from "lucide-react";
 import clouds from "../assets/clouds-top.png";
 import Image from "next/image";
-import { LocationResponse, Weather } from "@/app/page";
+import { LocationResponse, Weather } from "app/page";
 import Loading from "./Loading";
 
 interface Props {

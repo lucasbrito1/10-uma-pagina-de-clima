@@ -1,4 +1,4 @@
-import { ForecastDayWeather } from "@/app/page";
+import { ForecastDayWeather } from "app/page";
 import { format } from "date-fns";
 import { utcToZonedTime } from "date-fns-tz";
 import ptBR from "date-fns/locale/pt-BR";

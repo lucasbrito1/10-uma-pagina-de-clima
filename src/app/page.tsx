@@ -1,9 +1,9 @@
 "use client";
 
-import AirQuality from "@/components/AirQuality";
-import SunTime from "@/components/SunTime";
-import TemperatureNow from "@/components/TemperatureNow";
-import WeekWeather from "@/components/WeekWeather";
+import AirQuality from "components/AirQuality";
+import SunTime from "components/SunTime";
+import TemperatureNow from "components/TemperatureNow";
+import WeekWeather from "components/WeekWeather";
 import { useEffect, useState } from "react";
 
 export type Weather = {
@@ -73,6 +73,8 @@ const urlWeather = "https://api.weatherapi.com/v1/forecast.json?key=";
 export default function Home() {
   const [weather, setWeather] = useState<Weather | null>(null);
   const [location, setLocation] = useState<LocationResponse | null>(null);
+
+  console.log(weather);
 
   useEffect(() => {
     const loadWeather = async () => {

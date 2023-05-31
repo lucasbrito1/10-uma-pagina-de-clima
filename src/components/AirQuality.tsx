@@ -1,7 +1,7 @@
-import { Weather } from "@/app/page";
+import { Weather } from "app/page";
+import Loading from "components/Loading";
 import { Leaf } from "lucide-react";
 import { useEffect, useState } from "react";
-import Loading from "./Loading";
 
 interface Props {
   weather: Weather | null;
